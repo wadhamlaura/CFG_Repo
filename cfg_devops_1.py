@@ -65,3 +65,13 @@ y_pred = reg.predict(X_test)
 # Compute the mean squared error of the predictions
 mse = mean_squared_error(y_test, y_pred)
 print("Mean squared error:", mse)
+
+
+#Visualising the predictions vs the actual data
+
+# Create a scatter plot of the predicted vs actual values
+plt.scatter(y_test[0:500], y_pred[0:500])
+plt.xlabel("Predicted values")
+plt.ylabel("Actual values")
+plt.title("Predicted vs Actual Values for Linear Regression Model")
+plt.show()
